@@ -27,7 +27,7 @@ public class CadastroActivity extends AppCompatActivity {
         edtDtNasc = (TextInputEditText) findViewById(R.id.edtDtNasc);
 
         /** */
-        radioGroup = (RadioGroup)        findViewById(R.id.radioGroupMF);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroupMF);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -44,8 +44,6 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });
 
-        String valor = getIntent().getExtras().getString("HelloWord");
-        Toast.makeText(this, valor, Toast.LENGTH_LONG).show();
         FloatingActionButton floatCadastrar =
                 (FloatingActionButton) findViewById(R.id.floatCadastro);
     }

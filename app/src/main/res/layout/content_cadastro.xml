@@ -109,8 +109,6 @@
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:inputType="date"
-                android:layout_margin="5dp"
-
                 android:hint="@string/cmp_dtnasc">
 
             >

@@ -17,7 +17,6 @@ public class InicialActivity extends AppCompatActivity {
 
     public void btnAcessar(View view){
         Intent acessar = new Intent(this, CadastroActivity.class);
-        acessar.putExtra("HelloWord", "HelloWord");
         startActivity(acessar);
 
     }
