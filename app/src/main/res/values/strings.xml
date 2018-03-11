@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Onde Comprar?</string>
+    <string name="app_name">QPreço</string>
     <string name="emp_name">Belong</string>
 
     <!-- Titulos Activity-->
@@ -15,4 +15,22 @@
     <string name="txt_masc">Masculino</string>
     <string name="txt_fem">Feminino</string>
     <string name="txt_sex">Sexo:</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Menu -->
+    <string name="menu_1">Comparar Preços</string>
+    <string name="menu_2">Encartes</string>
+    <string name="menu_3">Listas</string>
+    <string name="menu_4"></string>
+    <string name="contato">Contato</string>
+    <string name="menu_5">Ajuda e Feedback</string>
+    <string name="menu_6">Política e Privacidade</string>
+
 </resources>

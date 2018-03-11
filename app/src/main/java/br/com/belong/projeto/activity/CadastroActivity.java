@@ -1,5 +1,6 @@
 package br.com.belong.projeto.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputEditText;
@@ -51,11 +52,14 @@ public class CadastroActivity extends AppCompatActivity {
     public void cadastrar(View view){
          Mensagem m = new Mensagem();
          m.rodapeRapido(view, "Clicou em Cadastrar");
+        Intent c = new Intent(this, MainActivity.class);
+        startActivity(c);
     }
 
     public void info(View view){
         Mensagem m = new Mensagem();
         m.rodapeLongo(view, "Identifique-se para acessar!");
+
     }
 
 }
