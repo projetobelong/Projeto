@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Projeto</string>
+    <string name="app_name">Onde Comprar?</string>
+    <string name="emp_name">Belong</string>
+
+    <!-- Titulos Activity-->
+    <string name="title_activity_cadastro">Informe os seus dados...</string>
+
+    <!-- CAMPOS-->
+    <string name="cmp_nome">Nome</string>
+    <string name="cmp_email">Email</string>
+    <string name="cmp_dtnasc">Data de Nascimento</string>
+
+
+    <!-- Palavras -->
+    <string name="txt_masc">Masculino</string>
+    <string name="txt_fem">Feminino</string>
+    <string name="txt_sex">Sexo:</string>
 </resources>
