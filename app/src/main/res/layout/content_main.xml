@@ -16,4 +16,8 @@
         android:gravity="center"
         android:textSize="30dp"/>
 
+    <include layout="@layout/activity_barra_inferior"/>
+
+
+
 </android.support.constraint.ConstraintLayout>

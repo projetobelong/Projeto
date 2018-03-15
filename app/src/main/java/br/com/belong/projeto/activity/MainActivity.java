@@ -15,10 +15,12 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import br.com.belong.projeto.R;
+import br.com.belong.projeto.util.Mensagem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    TextView txtMensagem;
+    TextView txtMensagem, txtNavNome, txtNavEmail;
+    String stringNavNome, stringNavEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +29,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,6 +48,16 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         txtMensagem =(TextView) findViewById(R.id.txtMensagem);
+        txtNavNome =(TextView) findViewById(R.id.txtNavNome);
+        txtNavEmail =(TextView) findViewById(R.id.txtNavEmail);
+
+
+
+        stringNavNome = getIntent().getExtras().getString("nome");
+        stringNavEmail = getIntent().getExtras().getString("email");
+
+
+
     }
 
     @Override

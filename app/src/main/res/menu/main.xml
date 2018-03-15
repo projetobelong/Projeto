@@ -3,7 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_settings"
+        android:actionLayout="@layout/activity_cadastro"
+        android:icon="@mipmap/ic_help_outline"
+        android:iconTint="#FFFFFF"
+        android:orderInCategory="101"
+        android:title="@string/action_ajuda"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_white_24dp"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="@string/action_pesquisar"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+
 </menu>
